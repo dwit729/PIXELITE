@@ -1,8 +1,8 @@
 module.exports = (sequelize, DataTypes) =>{
 
-    const Clients = sequelize.define("Clients", {
+    const Equipment = sequelize.define("Equipment", {
         
-        client_id: {
+        equip_id: {
             type: DataTypes.INTEGER,
             allowNull: false,
             autoIncrement: true,
@@ -10,31 +10,26 @@ module.exports = (sequelize, DataTypes) =>{
             
         },
         
-        client_name: {
+        equip_name: {
             type: DataTypes.STRING,
             allowNull: false
         
         },
 
-        client_email: {
+        equip_type: {
             type: DataTypes.STRING,
             allowNull: false,
         },
 
-        client_contact: {
-            type: DataTypes.STRING,
-            allowNull: false
-        },
-        client_password: {
+        equip_serial: {
             type: DataTypes.STRING,
             allowNull: false
         }
-        
-        
+         
     })
 
     
 
-    return Clients
+    return Equipment
     
 }

@@ -5,7 +5,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function NavBar() {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-secondary">
       <Container>
         <Navbar.Brand href="#home">PIXELITE</Navbar.Brand>
         <div className='d-flex flex-row-reverse'>

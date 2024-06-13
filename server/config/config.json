@@ -1,21 +1,21 @@
 {
   "development": {
     "username": "root",
-    "password": "123456",
+    "password": "Belcena1",
     "database": "pixelite_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "123456",
+    "password": "Belcena1",
     "database": "pixelite_db",
     "host": "localhost",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "123456",
+    "password": "Belcena1",
     "database": "pixelite_db",
     "host": "localhost",
     "dialect": "mysql"
