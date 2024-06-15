@@ -3,22 +3,29 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
+
 function NavBar() {
   return (
     <Navbar expand="lg" className="bg-body-secondary">
       <Container>
-        <Navbar.Brand href="#home">PIXELITE</Navbar.Brand>
+        <Navbar.Brand href="/"><img
+              alt=""
+              src="https://img.icons8.com/ios-filled/50/FFFFFF/camera--v1.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />{' '}PIXELITE</Navbar.Brand>
         <div className="d-flex flex-row-reverse">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="me-1">
             <Nav>
-              <Nav.Link href="#" className="mx-2">
+              <Nav.Link href="/" className="mx-2">
                 Home
               </Nav.Link>
-              <Nav.Link href="#link" className="mx-2">
+              <Nav.Link href="/about" className="mx-2">
                 About Us
               </Nav.Link>
-              <Nav.Link href="#link" className="mx-2">
+              <Nav.Link href="/login" className="mx-2">
                 Login
               </Nav.Link>
               <NavDropdown title="Services" id="basic-nav-dropdown">
