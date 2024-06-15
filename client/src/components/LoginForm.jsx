@@ -1,12 +1,11 @@
 import React from 'react'
 import {Formik, Form as MikForm, Field, ErrorMessage} from "formik";
 import Button from 'react-bootstrap/esm/Button';
-import Row from 'react-bootstrap/esm/Row'
-import Col from 'react-bootstrap/esm/Col' 
+
+
 
 function LoginForm() {
   return (
-    <>
     <div data-bs-theme="light">
         <Formik>
             <MikForm>
@@ -30,10 +29,7 @@ function LoginForm() {
                 <Button className='my-4 w-100 btn-info fw-bold' type='submit'>LOGIN</Button>
             </MikForm>
         </Formik>
-
-        
     </div>
-    </>
   )
 }
 

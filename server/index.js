@@ -13,6 +13,8 @@ const clientsRouter = require("./routes/Clients");
 app.use("/clients", clientsRouter);
 
 
+
+
 db.sequelize.sync().then(() => {
 
     app.listen(3001, () => {

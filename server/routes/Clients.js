@@ -3,7 +3,6 @@ const router = express.Router();
 const { Clients } = require('../models')
 
 router.get("/", async (req, res) =>{
-    
     const listOfClients = await Clients.findAll()
     res.json(listOfClients)
 
@@ -14,6 +13,8 @@ router.post("/", async (req,res) =>{
     await Clients.create(client)
     res.json(client)
 })
+
+
 
 
 module.exports = router;
