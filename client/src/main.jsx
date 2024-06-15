@@ -7,6 +7,6 @@ import About from "./pages/About.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ClientProfile />
+    <About/>
   </React.StrictMode>
 );
