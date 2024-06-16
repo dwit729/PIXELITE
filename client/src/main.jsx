@@ -6,6 +6,6 @@ import ClientProfile from "./pages/ClientProfile.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <ClientProfile />
+    <Pixelite />
   </React.StrictMode>
 );

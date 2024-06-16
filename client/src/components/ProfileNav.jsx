@@ -71,7 +71,7 @@ function ProfileNav() {
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton></Offcanvas.Header>
         <Offcanvas.Title className="text-center pb-3">
-          Hello, Name!
+          Hello, Jett!
         </Offcanvas.Title>
         <div className="m-auto">
           <img
