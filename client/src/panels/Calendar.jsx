@@ -4,6 +4,7 @@ import ProfileNav from "../components/ProfileNav";
 function Calendar() {
   return (
     <div>
+      <ProfileNav/>
       <p>Calendar</p>
     </div>
   );

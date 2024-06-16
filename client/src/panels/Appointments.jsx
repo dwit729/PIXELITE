@@ -4,6 +4,7 @@ import ProfileNav from "../components/ProfileNav";
 function Appointments() {
   return (
     <div>
+      <ProfileNav/>
       <p>Appointments</p>
     </div>
   );

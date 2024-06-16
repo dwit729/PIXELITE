@@ -7,7 +7,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import ListGroup from "react-bootstrap/ListGroup";
-import AccountSettings from "../panels/AccountSettings";
 
 function ProfileNav() {
   //button style
@@ -43,10 +42,10 @@ function ProfileNav() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="me-1">
               <Nav>
-                <Nav.Link href="#" className="mx-2">
+                <Nav.Link href="/" className="mx-2">
                   Home
                 </Nav.Link>
-                <Nav.Link href="#link" className="mx-2">
+                <Nav.Link href="/about" className="mx-2">
                   About Us
                 </Nav.Link>
                 <Nav.Link href="#link" className="mx-2">
@@ -89,13 +88,26 @@ function ProfileNav() {
         </div>
 
         <Offcanvas.Body>
-          <ListGroup variant="flush">
-            <ListGroup.Item action>Account Settings</ListGroup.Item>
-            <ListGroup.Item action>My Appointments</ListGroup.Item>
-            <ListGroup.Item action>My Reviews</ListGroup.Item>
-            <ListGroup.Item action>My Albums</ListGroup.Item>
-            <ListGroup.Item action>Calendar</ListGroup.Item>
-          </ListGroup>
+          <Nav className="d-flex flex-column">
+            <Nav.Link href="/" className="link-secondary">
+              Home
+            </Nav.Link>
+            <Nav.Link href="/account-settings" className="link-secondary">
+              Account Settings
+            </Nav.Link>
+            <Nav.Link href="/appointments" className="link-secondary">
+              My Appointments
+            </Nav.Link>
+            <Nav.Link href="/reviews" className="link-secondary">
+              My Reviews
+            </Nav.Link>
+            <Nav.Link href="/albums" className="link-secondary">
+              My Albums
+            </Nav.Link>
+            <Nav.Link href="/calendar" className="link-secondary">
+              Calendar
+            </Nav.Link>
+          </Nav>
         </Offcanvas.Body>
       </Offcanvas>
     </div>
