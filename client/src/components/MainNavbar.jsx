@@ -13,7 +13,8 @@ function NavBar() {
               src="https://img.icons8.com/ios-filled/50/FFFFFF/camera--v1.png"
               width="30"
               height="30"
-              className="d-inline-block align-top"
+              className="d-inline-block align-top me-3"
+              
             />{' '}PIXELITE</Navbar.Brand>
         <div className="d-flex flex-row-reverse">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

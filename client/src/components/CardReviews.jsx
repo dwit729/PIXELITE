@@ -1,57 +1,103 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import dwit from "./images/dwit.jpg/";
+import pia from "./images/pia.jpg/";
+import matt from "./images/matt.jpg/";
+import mica from "./images/mica.jpg/";
 
 function CardReview() {
   return (
-        <div className='d-flex flex-row flex-wrap justify-content-around'>
-        <Card style={{width:'18rem'}} className='my-5 mx-3'>
-        <Card.Img style={{height:'180px', width:'36.5vh', objectFit:'cover', objectPosition:'center top'}} variant="top" src="https://assets.teenvogue.com/photos/613b5fd248eda7f19679403c/1:1/w_1175,h_1175,c_limit/1235152164" 
+    <div className="d-flex flex-row flex-wrap justify-content-around">
+      <Card style={{ width: "18rem" }} className="my-5 mx-3">
+        <Card.Img
+          style={{
+            height: "180px",
+            width: "auto",
+            objectFit: "cover",
+            objectPosition: "0px -60px",
+          }}
+          variant="top"
+          src={pia}
         />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-        </Card>
-        <Card style={{width:'18rem'}} className='my-5 mx-3'>
-        <Card.Img style={{height:'180px', width:'36.5vh', objectFit:'cover',objectPosition:'0px -110px'}} variant="top" src="https://static.india.com/wp-content/uploads/2024/02/Rihanna4.jpg?impolicy=Medium_Widthonly&w=400&h=800" />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-        </Card>
-        <Card style={{width:'18rem'}} className='my-5 mx-3'>
-        <Card.Img style={{height:'180px', width:'36.5vh', objectFit:'cover', objectPosition:'center top'}} variant="top" src="https://i8.amplience.net/i/naras/MI0005298282-MN0000994823" />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-        </Card>
-        <Card style={{width:'18rem'}} className='my-5 mx-3'>
-        <Card.Img style={{height:'180px', width:'36.5vh', objectFit:'cover'}} variant="top" src="https://variety.com/wp-content/uploads/2023/01/Doja-Cat-16x9-4.jpg?w=1000&h=563&crop=1"  />
-            <Card.Body>
-                <Card.Title>Card Title</Card.Title>
-                <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-                </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-        </Card>        
-        </div>
-      
-
+        <Card.Body>
+          <Card.Title>Sofia Ilustre</Card.Title>
+          <Card.Text style={{ textAlign: "center", fontSize: "1.2svw" }}>
+            "Having Pixelite as our photographer for my gig was a fantastic
+            experience. They were punctual, friendly, and had a keen sense for
+            capturing the right moments. The photos turned out great, with a
+            good mix of staged shots and natural candids. Would definitely
+            recommend!"
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card style={{ width: "18rem" }} className="my-5 mx-3">
+        <Card.Img
+          style={{
+            height: "180px",
+            width: "auto",
+            objectFit: "cover",
+            objectPosition: "1px -90px",
+          }}
+          variant="top"
+          src={matt}
+        />
+        <Card.Body>
+          <Card.Title>Matthew Martin</Card.Title>
+          <Card.Text style={{ textAlign: "center", fontSize: "1.2svw" }}>
+            "Pixelite did an incredible job with my casual outdoor photoshoot.
+            The photos really captured our true selves and the joy we felt
+            during the session. The final images were vibrant and full of life,
+            exactly what we were hoping for. I was so happy with how everything
+            turned out and will cherish these photos for years to come. Thank
+            you, Pixelite!"
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card style={{ width: "18rem" }} className="my-5 mx-3">
+        <Card.Img
+          style={{
+            height: "180px",
+            width: "auto",
+            objectFit: "cover",
+            objectPosition: "center",
+          }}
+          variant="top"
+          src={dwit}
+        />
+        <Card.Body>
+          <Card.Title>Dwight Ciervo</Card.Title>
+          <Card.Text style={{ textAlign: "center", fontSize: "1.2svw" }}>
+            "They did an amazing job with our outdoor shoot! The photos look so
+            natural and beautiful, capturing the essence of the surroundings
+            perfectly. The were very professional, friendly, and made the whole
+            experience enjoyable. The final images were delivered quickly and
+            exceeded my expectations. I will definitely be booking Pixelite for
+            future sessions."
+          </Card.Text>
+        </Card.Body>
+      </Card>
+      <Card style={{ width: "18rem" }} className="my-5 mx-3">
+        <Card.Img
+          style={{
+            height: "180px",
+            width: "auto",
+            objectFit: "cover",
+            objectPosition: "0 -30px",
+          }}
+          variant="top"
+          src={mica}
+        />
+        <Card.Body>
+          <Card.Title>Micaella Silverio</Card.Title>
+          <Card.Text style={{ textAlign: "center", fontSize: "1.2svw" }}>
+            "Pixelite perfectly captured every moment of our wedding day. The
+            photos are stunning and truly reflect the joy and love we felt. We
+            are so impressed with their professionalism and beautiful work. The
+            photos are amazing, Thank you!!"
+          </Card.Text>
+        </Card.Body>
+      </Card>
+    </div>
   );
 }
 

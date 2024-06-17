@@ -1,78 +1,111 @@
 import React from "react";
 import MainNavbar from "../components/MainNavbar.jsx";
-import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import gmail from "../components/images/gmail.png";
+import insta from "../components/images/instagram.png";
+import fb from "../components/images/facebook.png";
+import camera from "../components/images/camera.gif";
+import { useTypewriter } from "react-simple-typewriter";
 
 function About() {
+  const [title] = useTypewriter({
+    words: ["Pixels!"],
+    typeSpeed: 250,
+    deleteSpeed: 50,
+    loop: false,
+    delaySpeed: 5000,
+  });
+
+  const [text] = useTypewriter({
+    words: [
+      "Pixelite is a dynamic photo and events company specializing in capturing and creating memorable moments with a keen eye for detail and creativity, Pixelite excels in photography services tailored for weddings, corporate events, and special occasions from exquisite photo documentation to innovative event planning and execution, Pixelite ensures every client's vision is beautifully realized, ensuring lasting impressions and unforgettable experiences.",
+    ],
+    typeSpeed: 30,
+    deleteSpeed: 15,
+    loop: false,
+    delaySpeed: 9000,
+  });
+
   return (
     <div>
       <MainNavbar />
 
       <Container className="p-2">
         <div className="d-flex flex-wrap justify-content-center align-items-center">
-          <div className="w-200, h-500, m-5">
+          <div className="w-1000, h-500, m-5">
             <Image
               style={{
                 height: "500px",
-                width: "50vh",
+                width: "500px",
                 objectFit: "cover",
+                objectPosition: "-60px",
               }}
-              src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixid=M3wxMzcxOTN8MHwxfHNlYXJjaHwzfHxwaG90b2dyYXBoeXxlbnwwfHx8fDE2OTQyNTA5MDd8MA&ixlib=rb-4.0.3&fm=jpg&w=6000&h=4000&fit=max"
+              src={camera}
               rounded
             />
           </div>
-          <div
-            style={{ width: "650px", height: "auto", textAlign: "center" }}
-            className="m-5"
-          >
-            <h1 style={{ fontSize: "5rem" }} className="pt-5">
-              Hi Pixels!
+
+          <div style={{ width: "650px", height: "auto", textAlign: "center" }}>
+            <h1 style={{ fontSize: "5rem" }}>
+              Hi <span>{title}</span>
             </h1>
-            <p
-              style={{
-                textIndent: "3em",
-                lineHeight: "1.5",
-                fontSize: "1rem",
-              }}
+
+            <span
+              style={{ textIndent: "3em", lineHeight: "1.5", fontSize: "1rem" }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Vestibulum porttitor blandit enim sed faucibus. Sed et nibh
-              rutrum, congue odio aliquam, suscipit nisi. Aenean libero nisi,
-              dapibus sit amet mollis ut, vestibulum eget tellus. Cras
-              sollicitudin, sapien vitae luctus ullamcorper, quam ante rhoncus
-              urna, malesuada vehicula nisl augue at quam. Curabitur faucibus
-              lorem quis convallis volutpat. Nulla est ipsum, feugiat
-              condimentum nunc nec, luctus dignissim tellus. Curabitur lobortis
-              tincidunt ante. Fusce rutrum elit semper nunc iaculis, ut
-              tincidunt ipsum vulputate. Sed ut ipsum diam. Sed id sagittis
-              magna. Vivamus vitae ex vitae velit varius aliquet placerat eu
-              dolor. Morbi lobortis tellus est, non pulvinar sapien congue nec.
-              Pellentesque vehicula mattis magna, in finibus ex. Sed fermentum,
-              orci id convallis sagittis, sapien ante mollis lectus, quis mattis
-              nulla metus eu odio.
-            </p>
+              {text}
+            </span>
           </div>
         </div>
+      </Container>
+      <Container className="p-3 d-flex flex-wrap justify-content-center">
+        <Row className="gap-5">
+          <Col>
+            <a
+              href="#"
+              target="_blank"
+              style={{
+                justifyContent: "center",
+                alignContent: "center",
+                cursor: "pointer",
+              }}
+            >
+              <img src={gmail}></img>
+            </a>
+          </Col>
+          <Col>
+            <a
+              href="#"
+              target="_blank"
+              style={{
+                justifyContent: "center",
+                alignContent: "center",
+                cursor: "pointer",
+              }}
+            >
+              <img src={insta}></img>
+            </a>
+          </Col>
+          <Col>
+            <a
+              href="#"
+              target="_blank"
+              style={{
+                justifyContent: "center",
+                alignContent: "center",
+                cursor: "pointer",
+              }}
+            >
+              <img src={fb}></img>
+            </a>
+          </Col>
+        </Row>
       </Container>
     </div>
   );
 }
 
 export default About;
-
-{
-  /* <div className="w-500, h-200, d-flex flex-row-reverse">
-            <Image
-              style={{
-                height: "300px",
-                width: "100vh",
-                objectFit: "cover",
-                margin: "-90px 20px 40px 0",
-              }}
-              src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixid=M3wxMzcxOTN8MHwxfHNlYXJjaHwzfHxwaG90b2dyYXBoeXxlbnwwfHx8fDE2OTQyNTA5MDd8MA&ixlib=rb-4.0.3&fm=jpg&w=6000&h=4000&fit=max"
-              rounded
-            />
-          </div> */
-}
