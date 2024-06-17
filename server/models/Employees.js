@@ -28,6 +28,11 @@ module.exports = (sequelize, DataTypes) =>{
         
     })
 
+    Employees.associate = (models) =>
+        {
+            Employees.belongsToMany(models.Events, { through: 'EmployeeEventAssignment'})
+        }
+
     return Employees
     
 }

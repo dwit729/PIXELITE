@@ -1,9 +1,9 @@
 import React from 'react'
-import LoginForm from '../components/LoginForm'
 import Container from 'react-bootstrap/esm/Container'
 import CardBody from 'react-bootstrap/esm/CardBody'
 import NavBar from '../components/MainNavbar'
 import {Formik, Form as MikForm, Field, ErrorMessage} from "formik";
+import axios from 'axios';
 import Button from 'react-bootstrap/esm/Button';
 import * as Yup from 'yup';
 
@@ -20,7 +20,9 @@ function LoginPage() {
 
 
     const loginOnSubmit = (data) =>{
-        console.log(data)
+        axios.post("http://localhost:3001/auth/login", data).then((response)=>{
+            console.log(response.data)
+          })
     };
 
 

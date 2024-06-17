@@ -28,6 +28,9 @@ function NavBar() {
               <Nav.Link href="/login" className="mx-2">
                 Login
               </Nav.Link>
+              <Nav.Link href="/signup" className="mx-2">
+                SignUp
+              </Nav.Link>
               <NavDropdown title="Services" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">
                   Photoshoot

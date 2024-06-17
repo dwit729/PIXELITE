@@ -10,7 +10,10 @@ const db = require('./models');
 
 //Routers
 const clientsRouter = require("./routes/Clients");
-app.use("/clients", clientsRouter);
+app.use("/auth", clientsRouter);
+
+const eventsRouter = require("./routes/Events");
+app.use("/events", eventsRouter);
 
 
 

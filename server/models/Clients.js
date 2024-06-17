@@ -28,11 +28,15 @@ module.exports = (sequelize, DataTypes) =>{
         client_password: {
             type: DataTypes.STRING,
             allowNull: false
-        }
-        
-        
-    })
+        }        
+    });
 
+    
+    Clients.associate = (models) =>{
+        Clients.hasMany(models.Events,{
+            onDelete: "cascade",
+        });
+    };
     
 
     return Clients

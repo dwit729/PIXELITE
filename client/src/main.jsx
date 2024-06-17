@@ -1,9 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Pixelite from './Pixelite.jsx'
-import LoginForm from './components/LoginForm.jsx'
-
 import About from './pages/About.jsx'
+import EventTable from './components/EventsTable/EventTable.jsx'
 
 
 
