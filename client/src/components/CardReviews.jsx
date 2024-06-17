@@ -1,4 +1,3 @@
-import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import dwit from "./images/dwit.jpg/";
 import pia from "./images/pia.jpg/";
@@ -21,7 +20,7 @@ function CardReview() {
         />
         <Card.Body>
           <Card.Title>Sofia Ilustre</Card.Title>
-          <Card.Text style={{ textAlign: "center", fontSize: "1.2svw" }}>
+          <Card.Text style={{ textAlign: "center", fontSize: "clamp(10px, 1.2sww, 30px)" }}>
             "Having Pixelite as our photographer for my gig was a fantastic
             experience. They were punctual, friendly, and had a keen sense for
             capturing the right moments. The photos turned out great, with a
@@ -43,7 +42,7 @@ function CardReview() {
         />
         <Card.Body>
           <Card.Title>Matthew Martin</Card.Title>
-          <Card.Text style={{ textAlign: "center", fontSize: "1.2svw" }}>
+          <Card.Text style={{ textAlign: "center", fontSize: "clamp(10px, 1.2sww, 30px)" }}>
             "Pixelite did an incredible job with my casual outdoor photoshoot.
             The photos really captured our true selves and the joy we felt
             during the session. The final images were vibrant and full of life,
@@ -66,7 +65,7 @@ function CardReview() {
         />
         <Card.Body>
           <Card.Title>Dwight Ciervo</Card.Title>
-          <Card.Text style={{ textAlign: "center", fontSize: "1.2svw" }}>
+          <Card.Text style={{ textAlign: "center", fontSize: "clamp(10px, 1.2sww, 30px)" }}>
             "They did an amazing job with our outdoor shoot! The photos look so
             natural and beautiful, capturing the essence of the surroundings
             perfectly. The were very professional, friendly, and made the whole
@@ -89,7 +88,7 @@ function CardReview() {
         />
         <Card.Body>
           <Card.Title>Micaella Silverio</Card.Title>
-          <Card.Text style={{ textAlign: "center", fontSize: "1.2svw" }}>
+          <Card.Text style={{ textAlign: "center", fontSize: "clamp(10px, 1.2sww, 30px)" }}>
             "Pixelite perfectly captured every moment of our wedding day. The
             photos are stunning and truly reflect the joy and love we felt. We
             are so impressed with their professionalism and beautiful work. The

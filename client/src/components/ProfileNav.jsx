@@ -6,7 +6,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import ListGroup from "react-bootstrap/ListGroup";
+
 
 function ProfileNav() {
   //button style
@@ -42,7 +42,7 @@ function ProfileNav() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="me-1">
               <Nav>
-                <Nav.Link href="/" className="mx-2">
+                <Nav.Link href="/profile" className="mx-2">
                   Home
                 </Nav.Link>
                 <Nav.Link href="/about" className="mx-2">

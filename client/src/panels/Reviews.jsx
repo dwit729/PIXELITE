@@ -5,7 +5,7 @@ function Reviews() {
   return (
     <div>
       <ProfileNav/>
-      <p>revoiews</p>
+      <p>reviews</p>
     </div>
   );
 }

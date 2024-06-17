@@ -5,12 +5,13 @@ import Button from "react-bootstrap/esm/Button";
 import NavBar from "../components/MainNavbar";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
+import axios from "axios";
 
 function Register() {
   const loginInitialValues = {
     client_fName: "",
     client_lName: "",
-    client_fullName: "",
+    client_name: "",
     client_contact: "",
     client_email: "",
     client_password: "",
@@ -21,10 +22,15 @@ function Register() {
     const fullName = `${data.client_fName} ${data.client_lName}`;
     const submissionData = {
       ...data,
-      client_fullName: fullName,
+      client_name: fullName,
     };
     delete submissionData.client_passwordConfirm;
-    console.log(submissionData);
+    delete submissionData.client_fName;
+    delete submissionData.client_lName;
+
+    axios.post("http://localhost:3001/auth/signup", submissionData).then((response)=>{
+      console.log(response.data)
+    })
   };
 
   const validationSchema = Yup.object().shape({
@@ -40,8 +46,9 @@ function Register() {
 
   return (
     <>
+    <div>
       <NavBar></NavBar>
-      <div className="h-100 vh-100 d-flex justify-content-center align-items-center">
+      <div className="h-100 d-flex justify-content-center align-items-center mt-5">
         <div
           className="d-flex justify-content-center align-items-center bg-tertiary p-3 pt-5 w-50 rounded min-w-50 border border-white"
           data-bs-theme="light"
@@ -170,6 +177,7 @@ function Register() {
           </Formik>
         </div>
       </div>
+    </div>
     </>
   );
 }
