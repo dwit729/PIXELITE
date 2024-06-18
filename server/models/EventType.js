@@ -18,6 +18,15 @@ module.exports = (sequelize, DataTypes) =>{
          
     })
 
+
+    EventType.associate = (models) =>{
+        EventType.hasMany(models.Events,{
+            onDelete: 'CASCADE',
+            onUpdate: 'CASCADE'
+        });
+    };
+    
+
     return EventType
     
 }

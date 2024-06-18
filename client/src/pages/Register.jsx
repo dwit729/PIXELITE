@@ -30,6 +30,8 @@ function Register() {
 
     axios.post("http://localhost:3001/auth/signup", submissionData).then((response)=>{
       console.log(response.data)
+    }).then(() =>{
+      window.alert("CLIENT REGISTERED")
     })
   };
 

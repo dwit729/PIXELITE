@@ -30,6 +30,13 @@ module.exports = (sequelize, DataTypes) =>{
             Events.belongsToMany(models.Employees, { through: 'EmployeeEventAssignment'})
         }
 
+    Events.associate = (models) =>{
+        Events.belongsTo(models.EventType,{
+            onDelete: 'NO ACTION',
+            onUpdate: 'NO ACTION'
+        });
+    };
+
     return Events
     
 }

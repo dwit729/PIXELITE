@@ -4,7 +4,9 @@ import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 
+
 function NavBar() {
+
   return (
     <Navbar expand="lg" className="bg-body-secondary">
       <Container>
@@ -26,6 +28,7 @@ function NavBar() {
               <Nav.Link href="/about" className="mx-2">
                 About Us
               </Nav.Link>
+              
               <Nav.Link href="/login" className="mx-2">
                 Login
               </Nav.Link>
