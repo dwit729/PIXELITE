@@ -7,9 +7,10 @@ import Photoshoot from "./panels/Photoshoot.jsx";
 import EventOrgs from "./panels/EventOrgs.jsx";
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
+import PartyPlanner from "./panels/PartyPlanner.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <EventOrgs />
+    <PartyPlanner />
   </React.StrictMode>
 );
