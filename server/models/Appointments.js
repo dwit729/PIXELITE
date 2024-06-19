@@ -25,11 +25,6 @@ module.exports = (sequelize, DataTypes) =>{
          
     })
 
-    Appointments.associate = (models) =>
-        {
-            Appointments.belongsToMany(models.Employees, { through: 'EmployeeAppointmentAssignment'})
-        }
-
     
     Appointments.associate = (models) =>{
         Appointments.belongsTo(models.Clients,{

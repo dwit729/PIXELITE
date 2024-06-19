@@ -24,5 +24,18 @@ router.get("/test", async (req,res) =>{
     res.json(listOfEvents)
 });
 
+router.post("/getuser_events",async (req, res) =>{
+    try {
+        const {client_id} = req.body;
+        const client = await Events.findAll({where: {ClientCLientId: client_id}});
+        res.json(client)
+
+    } catch (error) {
+        console.log(error)
+    }
+    
+});
+
+
 
 module.exports = router;

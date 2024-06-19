@@ -16,6 +16,9 @@ app.use("/auth", clientsRouter);
 const eventsRouter = require("./routes/Events");
 app.use("/events", eventsRouter);
 
+const albumRouter = require("./routes/Albums")
+app.use("/albums", albumRouter)
+
 
 
 

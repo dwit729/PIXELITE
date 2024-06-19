@@ -37,6 +37,13 @@ module.exports = (sequelize, DataTypes) =>{
         });
     };
 
+    Events.associate = (models) =>{
+        Events.belongsTo(models.Clients,{
+            onDelete: 'NO ACTION',
+            onUpdate: 'NO ACTION'
+        });
+    };
+
     return Events
     
 }
