@@ -11,6 +11,6 @@ import PartyPlanner from "./panels/PartyPlanner.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <PartyPlanner />
+    <EventOrgs />
   </React.StrictMode>
 );

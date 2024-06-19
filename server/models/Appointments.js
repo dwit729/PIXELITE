@@ -30,6 +30,13 @@ module.exports = (sequelize, DataTypes) =>{
             Appointments.belongsToMany(models.Employees, { through: 'EmployeeAppointmentAssignment'})
         }
 
+    
+    Appointments.associate = (models) =>{
+        Appointments.belongsTo(models.Clients,{
+            onDelete: 'NO ACTION',
+            onUpdate: 'NO ACTION'
+        });
+    };
 
     return Appointments
     

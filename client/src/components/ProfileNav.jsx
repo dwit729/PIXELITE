@@ -1,14 +1,37 @@
 import React from "react";
 import Button from "react-bootstrap/esm/Button";
-import { useState } from "react";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { useContext, useState, useEffect} from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import { UserContext } from '../Pixelite';
+
+
+
 
 
 function ProfileNav() {
+
+  const [currentUser, setCurrentUser] = useContext(UserContext);
+  const [username, setUserName] = useState("")
+
+
+  let data = {
+    client_id: String(localStorage.getItem("client_id"))
+  }
+
+  useEffect(() => {
+      axios.post("http://localhost:3001/auth/getuser", data).then((response)=>{
+      console.log(response.data.client_name)
+      setUserName(response.data.client_name)})
+  },[]);
+  
+  
+  
   //button style
   const buttonStyle = {
     backgroundImage:
@@ -42,26 +65,11 @@ function ProfileNav() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="me-1">
               <Nav>
-                <Nav.Link href="/profile" className="mx-2">
-                  Home
-                </Nav.Link>
-                <Nav.Link href="/about" className="mx-2">
-                  About Us
-                </Nav.Link>
-                <Nav.Link href="#link" className="mx-2">
+                <Nav.Link href="/home" className="mx-2" onClick={() =>{
+                  localStorage.removeItem("client_id");
+                }}>
                   Logout
                 </Nav.Link>
-                <NavDropdown title="Services" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1">
-                    Photoshoot
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.2">
-                    Party Planner
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action/3.3">
-                    Event Organizer <br></br>and Photographer
-                  </NavDropdown.Item>
-                </NavDropdown>
               </Nav>
             </Navbar.Collapse>
           </div>
@@ -71,7 +79,7 @@ function ProfileNav() {
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton></Offcanvas.Header>
         <Offcanvas.Title className="text-center pb-3">
-          Hello, Jett!
+          Hello, {username}
         </Offcanvas.Title>
         <div className="m-auto">
           <img
@@ -89,22 +97,19 @@ function ProfileNav() {
 
         <Offcanvas.Body>
           <Nav className="d-flex flex-column">
-            <Nav.Link href="/" className="link-secondary">
+            <Nav.Link href="/profile" className="link-secondary">
               Home
             </Nav.Link>
-            <Nav.Link href="/account-settings" className="link-secondary">
+            <Nav.Link href="/profile/account-settings" className="link-secondary">
               Account Settings
             </Nav.Link>
-            <Nav.Link href="/appointments" className="link-secondary">
+            <Nav.Link href="/profile/appointments" className="link-secondary">
               My Appointments
             </Nav.Link>
-            <Nav.Link href="/reviews" className="link-secondary">
-              My Reviews
-            </Nav.Link>
-            <Nav.Link href="/albums" className="link-secondary">
+            <Nav.Link href="/profile/albums" className="link-secondary">
               My Albums
             </Nav.Link>
-            <Nav.Link href="/calendar" className="link-secondary">
+            <Nav.Link href="/profile/calendar" className="link-secondary">
               Calendar
             </Nav.Link>
           </Nav>

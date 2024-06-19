@@ -35,8 +35,17 @@ module.exports = (sequelize, DataTypes) =>{
     Clients.associate = (models) =>{
         Clients.hasMany(models.Events,{
             onDelete: "cascade",
+            onUpdate: "cascade",
         });
     };
+
+    Clients.associate = (models) =>{
+        Clients.hasMany(models.Appointments,{
+            onDelete: "cascade",
+            onUpdate: "cascade",
+        });
+    };
+    
     
 
     return Clients
