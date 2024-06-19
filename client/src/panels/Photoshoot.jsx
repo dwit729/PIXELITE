@@ -7,7 +7,7 @@ import StudioRentalP from "../components/images/StudioP.jpg";
 import PortraitP from "../components/images/PortraitP.jpg";
 import FamilyP from "../components/images/FamilyP.jpg";
 
-export default function Body() {
+export default function Photoshoot() {
   return (
     <section id="body" className="body-block">
       <NavBar />

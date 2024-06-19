@@ -22,7 +22,7 @@ function LoginPage() {
         client_email:"",
         client_password:"",
     };
-
+ 
     let navigate = useNavigate();
 
     const loginOnSubmit = (data) =>{
@@ -64,7 +64,6 @@ function LoginPage() {
     <>
         <NavBar></NavBar>
         <div className='h-100 vh-100 d-flex justify-content-center align-items-center'>
-        
             <div className='d-flex justify-content-center align-items-center bg-tertiary p-3 pt-5 w-50 rounded min-w-50 border border-white' data-bs-theme='light'
                     style={{
                          minWidth: "400px"

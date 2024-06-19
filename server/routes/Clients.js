@@ -80,6 +80,24 @@ router.post("/getuser",async (req, res) =>{
     
 });
 
+router.put("/updateaccount",async (req, res) =>{
+    try {
+        const {client_name, client_email, client_contact, client_id} = req.body;
+        const client = await Clients.update({
+            client_name: client_name,
+            client_email: client_email,
+            client_contact: client_contact
+        },{where: {client_id: client_id}});
+        
+
+        res.json(client_name)
+
+    } catch (error) {
+        console.log(error)
+    }
+    
+});
+
 
 
 

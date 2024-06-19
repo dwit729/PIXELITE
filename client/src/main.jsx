@@ -7,6 +7,6 @@ import Photoshoot from "./panels/Photoshoot.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Photoshoot />
+    <Pixelite />
   </React.StrictMode>
 );

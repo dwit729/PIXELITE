@@ -12,12 +12,14 @@ import Register from './pages/Register';
 import ClientDefault from './panels/ClientDefault';
 import { useState } from 'react';
 import { createContext } from 'react';
+import Photoshoot from './panels/Photoshoot.jsx';
 
 export const UserContext = createContext();
 
 const router = createBrowserRouter([
+
     {
-        path: '/',
+        path: '/home',
         element: <Home/>,
     },
     {
@@ -64,6 +66,10 @@ const router = createBrowserRouter([
     {
         path: '/signup',
         element: <Register/>
+    },
+    {
+      path: 'photoshoot_service',
+      element: <Photoshoot/>
     }
     
 ]);

@@ -24,12 +24,11 @@ function ProfileNav() {
     client_id: String(localStorage.getItem("client_id"))
   }
 
-  console.log(data)
-
-  
-  axios.post("http://localhost:3001/auth/getuser", data).then((response)=>{
-  console.log(response.data.client_name)
-  setUserName(response.data.client_name)})
+  useEffect(() => {
+      axios.post("http://localhost:3001/auth/getuser", data).then((response)=>{
+      console.log(response.data.client_name)
+      setUserName(response.data.client_name)})
+  },[]);
   
   
   
@@ -66,7 +65,7 @@ function ProfileNav() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav" className="me-1">
               <Nav>
-                <Nav.Link href="/" className="mx-2" onClick={() =>{
+                <Nav.Link href="/home" className="mx-2" onClick={() =>{
                   localStorage.removeItem("client_id");
                 }}>
                   Logout
@@ -106,9 +105,6 @@ function ProfileNav() {
             </Nav.Link>
             <Nav.Link href="/profile/appointments" className="link-secondary">
               My Appointments
-            </Nav.Link>
-            <Nav.Link href="/profile/reviews" className="link-secondary">
-              My Reviews
             </Nav.Link>
             <Nav.Link href="/profile/albums" className="link-secondary">
               My Albums
