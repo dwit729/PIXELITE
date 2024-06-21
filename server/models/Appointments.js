@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) =>{
         },
 
         app_address: {
-            type: DataTypes.DATE,
+            type: DataTypes.STRING,
             allowNull: false
         
         },

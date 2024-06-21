@@ -1,0 +1,120 @@
+/* styles.css */
+.backgroundPreview, .Intro-Container {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #0d0d0d);
+    color: #ecf0f1;
+    overflow: hidden;
+  }
+  
+  .intro-container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .display-1 {
+    font-weight: bold;
+    letter-spacing: 2px;
+    animation: textBounce 2s infinite;
+    color: #ffffff; /* Blue color */
+  }
+  
+  .button-group {
+    margin-top: 30px;
+    animation: bounceIn 2s ease-in-out;
+  }
+  
+  .custom-button {
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .custom-button:hover {
+    transform: scale(1.1);
+  }
+  
+  .custom-button-primary {
+    background-color: #ff8c9d; /* Pink color */
+    color: rgb(42, 6, 6);
+  }
+  
+  .custom-button-primary:hover {
+    background-color: #ff4f41;
+  }
+  
+  .custom-button-secondary {
+    background-color: #61e0e4; /* Yellow color */
+    color: rgb(2, 7, 39);
+  }
+  
+  .custom-button-secondary:hover {
+    background-color: #306aff;
+  }
+  
+
+  .one {
+    color: #61e0e4;
+  }
+
+  .two {
+    color: #ff8c9d;
+  }
+
+  .three {
+    color: #ffd873;
+  }
+
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes bounceIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes textBounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  @keyframes backgroundAnimate {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .backgroundPreview {
+    background: linear-gradient(135deg, #291f51, #0d0d0d);
+    background-size: 200% 200%;
+    animation: backgroundAnimate 3s ease infinite;
+  }
+  

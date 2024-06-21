@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Accordion from 'react-bootstrap/Accordion';
+import Collapse from 'react-bootstrap/esm/Collapse';
 
 const Gallery = ({ folderId }) => {
   const [images, setImages] = useState([]);
@@ -18,15 +20,19 @@ const Gallery = ({ folderId }) => {
   }, [folderId]);
 
   return (
-    <div className='d-flex flex-row align-items-center justify-content-center'>
-    <div className="d-flex flex-row align-items-center flex-wrap w-75">
-      {images.map(image => (
-        <div key={image.id} className="">
-          <img className='m-3 rounded border border-white' src={image.url} alt={image.name} />
-        </div>
-      ))}
-    </div>
-    </div>
+    <>
+    
+          <div className='d-flex flex-row justify-content-center'>
+          <div className="d-flex flex-row align-items-center justify-content-center flex-wrap w-100">
+            {images.map(image => (
+              <div key={image.id} className="">
+                <img className='m-3 rounded border border-white' src={image.url} alt={image.name} />
+              </div>
+            ))}
+          </div>
+          </div>
+          
+    </>
   );
 };
 

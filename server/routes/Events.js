@@ -36,6 +36,22 @@ router.post("/getuser_events",async (req, res) =>{
     
 });
 
+router.post("/joined_events", async (req, res) =>{
+    try {
+        const {client_id} = req.body;
+        const client = await sequelize.query(`SELECT e.*, c.client_name
+                FROM events e
+                JOIN clients c ON e.ClientClientId = c.client_id
+                WHERE e.ClientClientId = ${client_id};
+                `)
+        res.json(client)
+
+    } catch (error) {
+        console.log(error)
+    }
+    
+})
+
 
 
 module.exports = router;

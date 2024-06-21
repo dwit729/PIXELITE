@@ -13,11 +13,15 @@ import ClientDefault from './panels/ClientDefault';
 import { useState } from 'react';
 import { createContext } from 'react';
 import Photoshoot from './panels/Photoshoot.jsx';
+import PreviewPage from './pages/PreviewPage.jsx';
 
 export const UserContext = createContext();
 
 const router = createBrowserRouter([
-
+    {
+    path: '/',
+    element: <PreviewPage/>,
+    },
     {
         path: '/home',
         element: <Home/>,
