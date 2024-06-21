@@ -12,6 +12,6 @@ import 'react-big-calendar/lib/css/react-big-calendar.css'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Pixelite />
+    <EventOrgs />
   </React.StrictMode>
 );
