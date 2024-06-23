@@ -14,7 +14,7 @@ function PreviewPage() {
         <Row className="button-group">
             <Col>
             <Button variant="primary" size="lg" className="mx-2 custom-button custom-button-primary fw-bold" href='/home'>Client</Button>
-            <Button variant="secondary" size="lg" className="mx-2 custom-button custom-button-secondary fw-bold">Employee</Button>
+            <Button variant="secondary" size="lg" className="mx-2 custom-button custom-button-secondary fw-bold"  href='/employee'>Employee</Button>
             </Col>
         </Row>
     </Container>

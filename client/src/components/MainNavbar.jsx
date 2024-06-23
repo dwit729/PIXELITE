@@ -5,19 +5,19 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 
 
 
+
 function NavBar() {
 
   return (
     <Navbar expand="lg" className="bg-body-secondary">
       <Container>
         <Navbar.Brand href="/"><img
-              alt=""
-              src="https://img.icons8.com/ios-filled/50/FFFFFF/camera--v1.png"
+              alt="logo"
+              src="https://i.postimg.cc/j2Zmr1kX/Pixelite-Logo.png"
               width="30"
               height="30"
-              className="d-inline-block align-top me-3"
-              
-            />{' '}PIXELITE</Navbar.Brand>
+              className="d-inline-block align-top fw"
+            />{' '}PIXEL<span className="one">I</span><span className="two">T</span><span className="three">E</span></Navbar.Brand>
         <div className="d-flex flex-row-reverse">
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav" className="me-1">
@@ -38,10 +38,10 @@ function NavBar() {
                 <NavDropdown.Item href="/photoshoot_service">
                   Photoshoot
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
+                <NavDropdown.Item href="/party_planner">
                   Party Planner
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
+                <NavDropdown.Item href="/event_organizer">
                   Event Organizer <br></br>and Photographer
                 </NavDropdown.Item>
               </NavDropdown>

@@ -13,7 +13,14 @@ import ClientDefault from './panels/ClientDefault';
 import { useState } from 'react';
 import { createContext } from 'react';
 import Photoshoot from './panels/Photoshoot.jsx';
+import EventOrgs from './panels/EventOrgs.jsx'
+import PartyPlanner from './panels/PartyPlanner.jsx';
 import PreviewPage from './pages/PreviewPage.jsx';
+import EmployeeLogin from './EmployeeSide/EmployeePages/EmployeeLogin.jsx';
+import EmployeeHome from './EmployeeSide/EmployeePanels/EmployeeHome.jsx';
+import EmployeeAppoint from './EmployeeSide/EmployeePanels/EmployeeAppoint.jsx';
+import EmployeeFold from './EmployeeSide/EmployeePanels/EmployeeFold.jsx';
+import EmployeeEquip from './EmployeeSide/EmployeePanels/EmployeeEquip.jsx';
 
 export const UserContext = createContext();
 
@@ -74,7 +81,42 @@ const router = createBrowserRouter([
     {
       path: 'photoshoot_service',
       element: <Photoshoot/>
-    }
+    },
+    {
+      path: 'party_planner',
+      element: <PartyPlanner/>
+    },
+    {
+      path: 'event_organizer',
+      element: <EventOrgs/>
+    },
+    {
+      path: '/employee',
+      children: [
+              {
+              path: "/employee",
+              element: <EmployeeLogin />,
+              },
+              {
+                path: "/employee/home",
+                element: <EmployeeHome />,
+              },
+              {
+                path: "/employee/app",
+                element: <EmployeeAppoint/>,
+              },
+              {
+                path: "/employee/equip",
+                element: <EmployeeEquip/>,
+              },
+              {
+                path: "/employee/fold",
+                element: <EmployeeFold />,
+              },
+
+
+      ]
+  },
     
 ]);
 

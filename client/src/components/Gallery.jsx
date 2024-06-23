@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import Accordion from 'react-bootstrap/Accordion';
-import Collapse from 'react-bootstrap/esm/Collapse';
+
 
 const Gallery = ({ folderId }) => {
   const [images, setImages] = useState([]);

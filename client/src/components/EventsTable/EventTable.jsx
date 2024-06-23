@@ -22,23 +22,14 @@ console.log(u_data)
 const EventTable =() =>  {
 
   const [tableData, setTableData] = useState([
-    {
-      event_id: "",
-			event_date:"",
-			event_address: "",
-			createdAt: "",
-			updatedAt: "",
-			ClientClientId: "",
-			EventTypeTypeId: "",
-			client_name: ""
-    }
+
   ])
 
   useEffect(() => {
 
     axios.post("http://localhost:3001/events/joined_events", u_data).then((response) => {
         const inputArray = response.data
-        setTableData(inputArray[1])
+        setTableData(inputArray[0])
     })
     }, [])
 
@@ -86,8 +77,8 @@ const EventTable =() =>  {
     <hr/>
     <div className='d-flex flex-row justify-content-center'>
         <ButtonGroup className='gap-2'>
-          <Button variant='outline-info' onClick={() => {tableInstance.previousPage()}}>Previous</Button>
-          <Button variant='outline-info' onClick={() => {tableInstance.nextPage()}}>Next</Button>
+          <Button variant='outline-info' onClick={() => {tableInstance.previousPage()}} >Previous</Button>
+          <Button variant='outline-info' onClick={() => {tableInstance.nextPage()}} >Next</Button>
         </ButtonGroup>
     </div>
 

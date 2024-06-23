@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+
+      .cls-1 {
+        filter: url(#filter);
+      }
+
+      .cls-2 {
+        filter: url(#filter-2);
+      }
+
+      .cls-3 {
+        filter: url(#filter-3);
+      }
+
+      .cls-4 {
+        filter: url(#filter-4);
+      }
+
+      .cls-5 {
+        filter: url(#filter-5);
+      }
+
+      .cls-6 {
+        filter: url(#filter-6);
+      }
+    </style>
+    <filter id="filter" x="82" y="148" width="309" height="475" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="21.667" in="SourceAlpha"/>
+      <feColorMatrix result="color" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feColorMatrix result="color-2" values="0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0"/>
+      <feColorMatrix result="color-3" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feComponentTransfer result="comp" color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="1 0"/>
+        <feFuncG type="table" tableValues="1 0.3"/>
+        <feFuncB type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite result="composite" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-2" x="308" y="533" width="398.719" height="387.938" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="21.667" in="SourceAlpha"/>
+      <feColorMatrix result="color" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feColorMatrix result="color-2" values="0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0"/>
+      <feColorMatrix result="color-3" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feComponentTransfer result="comp" color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="1 0"/>
+        <feFuncG type="table" tableValues="1 0.3"/>
+        <feFuncB type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite result="composite" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-3" x="609" y="378" width="310" height="473" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="5.333" in="SourceAlpha"/>
+      <feColorMatrix result="color" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feColorMatrix result="color-2" values="0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0"/>
+      <feColorMatrix result="color-3" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feComponentTransfer result="comp" color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="1 0"/>
+        <feFuncG type="table" tableValues="1 0.3"/>
+        <feFuncB type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite result="composite" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-4" x="450" y="143" width="468" height="339" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="21.667" in="SourceAlpha"/>
+      <feColorMatrix result="color" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feColorMatrix result="color-2" values="0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0"/>
+      <feColorMatrix result="color-3" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feComponentTransfer result="comp" color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="1 0"/>
+        <feFuncG type="table" tableValues="1 0.3"/>
+        <feFuncB type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite result="composite" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-5" x="290" y="80" width="402" height="388" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="5.333" in="SourceAlpha"/>
+      <feColorMatrix result="color" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feColorMatrix result="color-2" values="0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0"/>
+      <feColorMatrix result="color-3" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feComponentTransfer result="comp" color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="1 0"/>
+        <feFuncG type="table" tableValues="1 0.3"/>
+        <feFuncB type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite result="composite" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+    <filter id="filter-6" x="81.813" y="517" width="469.188" height="341" filterUnits="userSpaceOnUse">
+      <feGaussianBlur result="blur" stdDeviation="5.333" in="SourceAlpha"/>
+      <feColorMatrix result="color" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feColorMatrix result="color-2" values="0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0"/>
+      <feColorMatrix result="color-3" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+      <feComponentTransfer result="comp" color-interpolation-filters="sRGB">
+        <feFuncR type="table" tableValues="1 0"/>
+        <feFuncG type="table" tableValues="1 0.3"/>
+        <feFuncB type="table" tableValues="1 1"/>
+      </feComponentTransfer>
+      <feComposite result="composite" operator="in" in2="SourceAlpha"/>
+      <feBlend result="blend" mode="multiply" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <path class="cls-1" d="M276,148S86.879,226.132,82,494c0,0,118.879,103.132,309,129C391,623,254,467.5,276,148Z"/>
+  <path class="cls-2" d="M661,533S568.879,748.632,308,871c0,0,178.879,115.632,397-5C705,866,720,660,661,533Z"/>
+  <path class="cls-3" d="M609,378S745.879,564.632,728,851c0,0,189.879-108.368,191-344C919,507,770,394,609,378Z"/>
+  <path class="cls-4" d="M450,345s231.879-26.368,468,137c0,0,4.879-214.868-196-339C722,143,544,208,450,345Z"/>
+  <path class="cls-5" d="M339,468s-71.121-166.868-42-332c0,0,204.879-121.868,395-6C692,130,488,198,339,468Z"/>
+  <path class="cls-6" d="M82,517S67.879,733.632,284,858c0,0,153.879-49.368,267-203C551,655,285,674,82,517Z"/>
+</svg>

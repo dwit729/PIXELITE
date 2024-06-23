@@ -1,6 +1,4 @@
 import React from 'react'
-import Container from 'react-bootstrap/esm/Container'
-import CardBody from 'react-bootstrap/esm/CardBody'
 import NavBar from '../components/MainNavbar'
 import {Formik, Form as MikForm, Field, ErrorMessage} from "formik";
 import axios from 'axios';
@@ -41,7 +39,6 @@ function LoginPage() {
                         user_type: "Client"
                     })
 
-                    console.log(currentUser)
                     navigate('/profile')
                 }
               })

@@ -17,7 +17,16 @@ const eventsRouter = require("./routes/Events");
 app.use("/events", eventsRouter);
 
 const albumRouter = require("./routes/Albums")
-app.use("/albums", albumRouter)
+app.use("/albums", albumRouter);
+
+const appointRouter = require("./routes/Appointments");
+app.use("/appointments", appointRouter);
+
+const mailRouter = require("./routes/MailingList");
+app.use("/mail", mailRouter);
+
+const empRouter = require("./routes/Employees");
+app.use("/employee", empRouter);
 
 
 
